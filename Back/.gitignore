@@ -1,0 +1,15 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/RamenGo-API-Application/bin
+/RamenGo-API-Application/obj
+/RamenGo-API-CrossCutting/bin
+/RamenGo-API-CrossCutting/obj
+/RamenGo-API-Data/bin
+/RamenGo-API-Data/obj
+/RamenGo-API-Domain/bin
+/RamenGo-API-Domain/obj
+/RamenGo-API-Service/bin
+/RamenGo-API-Service/obj

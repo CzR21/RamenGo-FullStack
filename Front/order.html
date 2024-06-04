@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@900&display=swap" rel="stylesheet">
+    <script src="js/order.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="order-container">
+        <div class="select-order">
+            <div class="ramen-go">
+                <span>ramenGO!</span>
+            </div>
+            <div class="ramen-selected">
+                <img id="ramen-imagen" src="assets/ramens/chasu.png" alt="Ramen image">
+                <span class="iten-title" style="color: var(--white-color);">Your Order:</span>
+                <span id="description" class="title" style="color: var(--yellow-color);">Shoyu and Karaague Ramen</span>
+            </div>
+            <div></div>
+        </div>
+        <div class="new-order">
+            <img src="assets/Bowing.svg" alt="Child icon">
+            <span class="iten-title" style="color: var(--yellow-color);">どもありがとうございます。</span>
+            <span class="title" style="color: var(--red-color);">Your order is being prepared</span>
+            <span class="sub-title">Hold on, when you least expect you will be eating your rámen. </span>
+            <button onclick="placeNewOrder()">
+                <span>PLACE NEW ORDER</span>
+                <img src="assets/ArrowYellow.svg" alt="Arrow black">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

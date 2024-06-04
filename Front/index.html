@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-R8LOhGsb3gIggxtS+J4CkGW/nCqT0WSgLz/aA6XcwBCbftTQueM8dYlOg17/qX/hD30gijohOsPK56xqNXpP5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/home.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="cover-container">
+        <img class="cover" src="assets/Cover.svg" alt="Cover image">
+    </div>
+    <div class="hero-container">
+        <div class="text-container">
+            <span class="title">First things first: select your favorite broth.</span>
+            <span class="sub-title">It will give the whole flavor on your ramen soup.</span>
+        </div>
+        <div id="broths" class="itens-container"></div>
+        <div class="text-container">
+            <span class="title">It’s time to choose (or not) your meat!</span>
+            <span class="sub-title">Some people love, some don’t. We have options for all tastes.</span>
+        </div>
+        <div id="proteins" class="itens-container"></div>
+        <div class="buttom-container">
+            <button id="placeOrder" disabled onclick="newOrder()">
+                <span>PLACE MY ORDER</span>
+                <img id="arrowIcon" src="assets/Arrow.svg" alt="Arrow black">
+                <i id="spinnerIcon" class="fas fa-spinner fa-spin" style="display: none; color: white;"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

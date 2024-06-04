@@ -1,0 +1,44 @@
+.select-order {
+    width: 50%;
+    height: 100vh;
+    background-image: url('../assets/Pattern-azul.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-order {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--white-lite-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-order span,
+button {
+    margin: 10px;
+}
+
+#order-container {
+    display: flex !important;
+    flex-direction: row;
+}
+
+.ramen-selected{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ramen-go{
+    padding: 10px;
+    width: 90%;
+    color: var(--red-color);
+}
