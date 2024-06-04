@@ -1,4 +1,4 @@
-# Ramen GO API!
+# Ramen GO!
 
 ## Introdução
 Bem-vindo ao Ramen Go! Este sistema foi desenvolvido para permitir que os usuários montem pedidos de ramen, escolhendo entre diferentes opções de caldos e proteínas. Abaixo, você encontrará informações sobre como configurar, utilizar e contribuir para este projeto.
