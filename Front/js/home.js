@@ -15,6 +15,19 @@ const Type = {
 document.addEventListener('DOMContentLoaded', function () {
   getBroths();
   getProteins();
+
+  var botaoScroll = document.getElementById('newOrder');
+  var parteDaTela = document.getElementById('itens');
+
+  botaoScroll.addEventListener('click', function () {
+    var rect = parteDaTela.getBoundingClientRect();
+    var offsetTop = rect.top + window.scrollY;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  });
 });
 
 function getBroths() {
@@ -163,7 +176,7 @@ function checkButtonState() {
   }
 }
 
-function newOrder(){
+function newOrder() {
   const arrowIcon = document.getElementById("arrowIcon");
   const spinnerIcon = document.getElementById("spinnerIcon");
 
@@ -191,19 +204,30 @@ function newOrder(){
     .then((result) => {
       arrowIcon.style.display = "inline-block";
       spinnerIcon.style.display = "none";
-      
+
       orderResult(result)
     })
     .catch((error) => {
       arrowIcon.style.display = "inline-block";
       spinnerIcon.style.display = "none";
 
-      console.log(error)}
+      console.log(error)
+    }
     );
 }
 
-function orderResult(result){
+function orderResult(result) {
   console.log(result)
   localStorage.setItem('order', result);
   window.location.href = '/order.html';
 }
+
+$(document).ready(function () {
+  $('.scroll-link').on('click', function (event) {
+    event.preventDefault();
+    var target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 800);
+  });
+});

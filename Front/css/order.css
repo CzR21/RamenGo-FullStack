@@ -31,6 +31,20 @@ button {
     flex-direction: row;
 }
 
+@media screen and (max-width: 768px) {
+    #order-container {
+        flex-direction: column; 
+    }
+
+    .new-order {
+        width: 100%;
+    }
+
+    .select-order {
+        width: 100%;
+    }
+}
+
 .ramen-selected{
     display: flex;
     flex-direction: column;
